@@ -1,0 +1,5 @@
+kill -9 $(ps -aux | grep "python" | grep -v grep | awk '{printf "%d ", $2}')
+
+
+# 得到本地函数
+getattr(sys.modules[__name__], fit_transform_func_name)
